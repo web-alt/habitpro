@@ -1,0 +1,19 @@
+{
+  "name": "HabitPro - Habit Tracker",
+  "short_name": "HabitPro",
+  "description": "Premium habit tracker with analytics, journal, and gamification",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d0d12",
+  "theme_color": "#7c6aff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/8201/8201306.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "lifestyle", "health"]
+}
