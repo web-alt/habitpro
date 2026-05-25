@@ -630,15 +630,6 @@ async function initApp() {
   } else {
     _showAuth();
   }
-
-  _hideSplash();
-}
-
-function _hideSplash() {
-  const splash = _el('splash-screen');
-  if (!splash) return;
-  splash.style.opacity = '0';
-  setTimeout(() => splash.classList.add('hidden'), 520);
 }
 
 function _showAuth() {
