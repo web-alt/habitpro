@@ -67,27 +67,11 @@ img { display: block; max-width: 100%; }
 @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
 @keyframes slideUp { from { transform:translateY(20px);opacity:0; } to { transform:translateY(0);opacity:1; } }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.45} }
-@keyframes splashLoad { 0%{width:0} 80%{width:90%} 100%{width:100%} }
 @keyframes spinIn { from{transform:rotate(-15deg) scale(.9);opacity:0} to{transform:rotate(0) scale(1);opacity:1} }
 @keyframes shimmer { 0%{background-position:-200px 0} 100%{background-position:200px 0} }
 @keyframes checkPop { 0%{transform:scale(.7)} 60%{transform:scale(1.2)} 100%{transform:scale(1)} }
 @keyframes unlockPop { 0%{transform:scale(.5) rotate(-10deg);opacity:0} 60%{transform:scale(1.15) rotate(3deg);opacity:1} 100%{transform:scale(1) rotate(0);opacity:1} }
 @keyframes dragGhost { from{opacity:.9;transform:scale(1.02)} to{opacity:.9;transform:scale(1.02)} }
-
-/* ── SPLASH ──────────────────────────────────── */
-.splash-screen {
-  position: fixed; inset: 0; z-index: 2000;
-  background: var(--bg);
-  display: flex; align-items: center; justify-content: center;
-  transition: opacity .5s ease;
-}
-.splash-content { text-align: center; }
-.splash-logo { display: flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 10px; }
-.splash-icon { font-size: 2.4rem; color: var(--accent); animation: pulse 1.5s infinite; }
-.splash-title { font-size: 2.6rem; font-weight: 700; letter-spacing: -.5px; }
-.splash-tagline { color: var(--text-2); font-size: .9rem; margin-bottom: 32px; }
-.splash-loader { width: 160px; height: 3px; background: var(--bg-4); border-radius: 10px; overflow: hidden; margin: 0 auto; }
-.splash-bar { height: 100%; width: 0; background: var(--accent); border-radius: 10px; animation: splashLoad 1.6s ease forwards; }
 
 /* ── AUTH ──────────────────────────────────────── */
 .auth-screen {
